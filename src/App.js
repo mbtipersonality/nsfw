@@ -11,7 +11,7 @@ function App() {
       const randSearch = search2[Math.floor(Math.random() * (search2.length - 1 + 1) + 1 )]
       const newNsfw = search2.filter(item => item !== randSearch)
       localStorage.setItem('nsfw', JSON.stringify(newNsfw))
-      window.location = `https://www.reddit.com/r/{randSearch}`
+      window.location = `https://www.reddit.com/r/${randSearch}`
     }
     else {
       localStorage.setItem('nsfw', JSON.stringify(search1))
